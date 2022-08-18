@@ -3,7 +3,7 @@ const CryptoJS = require('crypto-js')
 const length = 12
 const chars = 'abcdefghijklmnopqrstuvwxyz1234567890'
 var string = ''
-const numberOfCredentials = 50
+const numberOfCredentials = 20
 
 const createRandEmailString = () => {
  
@@ -19,8 +19,9 @@ const createRanEmailCredentials = () => {
   for (var i = 0; i < numberOfCredentials; i++) {
   EmailCredentials[i] = createRandEmailString()
   string = ''
-  console.log(EmailCredentials[i] + '@gmail.com')
+  //console.log(EmailCredentials[i] + '@gmail.com')
   }
+  console.log(JSON.stringify(EmailCredentials))
   // for (var i = 0; i < numberOfCredentials; i++) {
   //   let EmailCredentials = {
   //     email: 'dfad@gmail.com',

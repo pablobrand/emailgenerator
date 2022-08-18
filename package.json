@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "crypto-js": "^4.1.1",
+    "node-fetch": "^3.2.10",
     "prompt-sync": "^4.2.0",
     "puppeteer": "^14.1.2"
-  }
+  },
+  "type": "module"
 }
